@@ -5,7 +5,7 @@ This project is a web vulnerability scanner that I built to demonstrate how comm
 
 The scanner runs locally on the user’s computer and analyzes a target website for potential vulnerabilities. It is designed for educational purposes and focuses on understanding how scanning tools work rather than exploiting real systems.
 
--
+---
 
 ## How the Project Works
 The project is split into two main parts:
@@ -17,7 +17,7 @@ The backend handles requests, runs scans, and sends results back to the frontend
 
 The frontend and backend communicate using HTTP requests over different local ports.
 
--
+---
 
 ## Technologies Used
 - Python with Flask for the backend server
@@ -26,6 +26,6 @@ The frontend and backend communicate using HTTP requests over different local po
 - Axios for API requests
 - Node.js and npm for frontend dependencies
 
--
+---
 
 ## Project Structure
