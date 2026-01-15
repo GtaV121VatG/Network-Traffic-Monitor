@@ -5,10 +5,11 @@ cd /d %~dp0\backend || exit /b
 python -m pip install -r requirements.txt
 start cmd /k "python app.py"
 
-REM Give backend time to start
+REM Wait for backend
 timeout /t 5 /nobreak
 
-REM Start frontend
+REM Start frontend (non-interactive)
 cd /d %~dp0\frontend || exit /b
-npm install
+set BROWSER=none
+set CI=true
 start cmd /k "npm start"
