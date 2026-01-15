@@ -1,27 +1,27 @@
-# Web Vulnerability Scanner
+# GtaV121VatG's Network Traffic Monitor:
 
 ## Project Overview
-This project is a web vulnerability scanner that I built to demonstrate how common website security issues can be detected using a custom backend and a web-based frontend. The goal of this project is to show how frontend and backend systems communicate in a real application while performing automated security checks.
+This project is a network traffic monitor that I built to demonstrate how network data can be captured, analyzed, and displayed using a full stack application. The purpose of this project is to show how network activity can be monitored locally while connecting a backend system to a web based frontend.
 
-The scanner runs locally on the user’s computer and analyzes a target website for potential vulnerabilities. It is designed for educational purposes and focuses on understanding how scanning tools work rather than exploiting real systems.
+The application runs on a local machine and is intended for educational use only. It focuses on understanding how network monitoring tools work rather than intercepting or modifying real traffic.
 
 ---
 
 ## How the Project Works
-The project is split into two main parts:
+The project is divided into two main components:
 
-- A Python backend that performs the scanning logic
-- A React frontend that provides a user interface
+- A Python backend that monitors and processes network traffic
+- A React frontend that displays traffic data in a clear interface
 
-The backend handles requests, runs scans, and sends results back to the frontend. The frontend allows the user to start scans and view results in a clear, readable format.
+The backend collects network information and exposes it through API endpoints. The frontend sends requests to the backend and updates the display in real time based on the data received.
 
-The frontend and backend communicate using HTTP requests over different local ports.
+The frontend and backend communicate using HTTP requests on different local ports.
 
 ---
 
 ## Technologies Used
 - Python with Flask for the backend server
-- Flask-CORS to allow frontend and backend communication
+- Flask-CORS to allow cross origin communication
 - JavaScript with React for the frontend interface
 - Axios for API requests
 - Node.js and npm for frontend dependencies
